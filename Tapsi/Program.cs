@@ -1,5 +1,5 @@
 ﻿
-var array = new int[] { 7, 3, 8, 2, 10, 10 };
+var array = new int[] { 7, 3, 8, 2 };
 
 var score = new int[array.Length, array.Length];
 
@@ -19,6 +19,7 @@ for (int j = 1; j < array.Length; j++)
     }
 }
 
+Console.WriteLine($"best score is: {score[0, array.Length - 1]}");
 for (int j = 0; j < array.Length; j++)
 {
     for (int i = 0; i < array.Length; i++)
